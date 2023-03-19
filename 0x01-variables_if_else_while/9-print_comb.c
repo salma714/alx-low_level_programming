@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - print all posible combinations
+ * main - Entry point
  *
- * Return
+ * Return: 0 (Success)
  */
 int main(void)
 {
