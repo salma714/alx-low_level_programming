@@ -14,16 +14,14 @@ int main(void)
 
 	for (d = '0'; d < '9'; d++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (p = d + 1; p < '9'; p++)
 		{
-			for (s = p = 1; s <= '9'; s++)
+			for (s = p = 1; s < '9'; s++)
 			{
-				if ((d != p) != s)
-				putchar(d);
-				putchar(p);
-				putchar(s);
-				if (d == '8' && p == '9')
-					continue;
+				if (d < p && p < s)
+				putchar(d + '0');
+				putchar(p + '0');
+				putchar(s + '0');
 				putchar(',');
 				putchar(' ');
 			}
